@@ -1,5 +1,5 @@
 libX11
 libXrandr
 xorg-util-macros	make
-xorgproto			make
+xorgproto		make
 xcb-util
