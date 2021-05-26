@@ -1,6 +1,7 @@
 #!/bin/sh -e
 
 patch -p1 < menu-under-cursor.patch
+patch -p1 < no-top-border-on-fullscreen.patch
 patch -p1 < openbox-3.6.2-fix-out-of-bounds.patch
 patch -p1 < openbox-3.6.2-rounded-corners.patch
 
