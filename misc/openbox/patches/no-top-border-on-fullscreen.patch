@@ -1,0 +1,22 @@
+From 12daac327b5a4f89b3e75fed7e4fcb01ad3f4007 Mon Sep 17 00:00:00 2001
+From: Camille Scholtz <camille@airmail.cc>
+Date: Wed, 26 Dec 2018 16:38:02 +0100
+Subject: [PATCH] hide border on maximize
+
+---
+ openbox/client.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/openbox/client.c b/openbox/client.c
+index 62cafc291..16502d396 100644
+--- a/openbox/client.c
++++ b/openbox/client.c
+@@ -1927,7 +1927,7 @@ void client_setup_decor_and_functions(ObClient *self, gboolean reconfig)
+            the case any more though !
+ 
+            but do kill the handle on fully maxed windows */
+-        self->decorations &= ~(OB_FRAME_DECOR_HANDLE | OB_FRAME_DECOR_GRIPS);
++        self->decorations &= ~(OB_FRAME_DECOR_HANDLE | OB_FRAME_DECOR_GRIPS | OB_FRAME_DECOR_BORDER);
+     }
+ 
+     /* if we don't have a titlebar, then we cannot shade! */
