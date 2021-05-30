@@ -1,0 +1,8 @@
+#!/bin/sh -e
+
+./configure \
+	--prefix=/usr \
+    --pcfdir=/usr/share/fonts/X11/misc/
+
+make
+make DESTDIR="$1" install
